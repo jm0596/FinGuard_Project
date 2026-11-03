@@ -1,0 +1,20 @@
+# ---- Secrets & credentials ----
+.env
+.env.*
+*.env
+credentials.json
+service-account*.json
+
+# ---- Databricks ----
+.databricks/
+.lakehouse/
+
+# ---- Notebooks / IDE ----
+.ipynb_checkpoints/
+.Rhistory
+
+# ---- OS / misc ----
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
