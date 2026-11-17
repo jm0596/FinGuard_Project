@@ -1,0 +1,23 @@
+resources:
+  jobs:
+    finguard_project:
+      name: Finguard Project
+      tasks:
+        - task_key: pipeline-task-d2ea2f2e-082a-4464-aaed-aae3eee55b05
+          disabled: false
+          email_notifications: {}
+          pipeline_task:
+            pipeline_id: d2ea2f2e-082a-4464-aaed-aae3eee55b05
+          run_if: ALL_SUCCESS
+          timeout_seconds: 0
+      continuous:
+        pause_status: PAUSED
+      email_notifications:
+        on_failure:
+          - jithin0596@gmail.com
+      max_concurrent_runs: 1
+      notification_settings:
+        no_alert_for_skipped_runs: true
+      performance_target: PERFORMANCE_OPTIMIZED
+      timeout_seconds: 0
+      webhook_notifications: {}
